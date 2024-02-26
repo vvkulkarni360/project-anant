@@ -8,6 +8,7 @@ require('dotenv').config()
 app.use(cors())
 app.use(express.static('public'))
 
+app.set('view engine', 'ejs');
 
 
 app.get('/',(req,res)=>{
@@ -16,9 +17,16 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/about',(req,res)=>{
-    res.sendFile(__dirname+"/public/about.html")
+    res.render('about')
 })
 
+app.get('/services',(req,res)=>{
+    res.render('services')
+})
+
+app.get('/contacts',(req,res)=>{
+    res.render('contacts')
+})
 app.listen(port,()=>{
     console.log(`Server at : http://localhost:${port}`)
 })

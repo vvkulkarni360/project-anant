@@ -14,22 +14,7 @@
 </head>
 
 <body>
-  <!--
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-      </div>
-    </div>
-  </nav>
-  -->
+
   <div class="nav-about-cont">
     <div class="nav-cont">
       <nav class="navbar navbar-expand-lg " style="background-color:rgb(7, 138, 219);  position: fixed; width:100%;">
@@ -45,16 +30,32 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
               <a class="nav-link active" id="" href="/about">
-                <h1 class="nav-items">About</h1>
-              </a>
-              <a class="nav-link active" href="/" id="">
                 <h1 class="nav-items">Home</h1>
               </a>
-              <a class="nav-link active" href="" id="">
-                <h1 class="nav-items">Services</h1>
+              <a class="nav-link active" href="/" id="">
+                <h1 class="nav-items">Replace</h1>
               </a>
-              <a class="nav-link active" href="" id="">
-                <h1 class="nav-items">Contact us</h1>
+              <a class="nav-link active" href="/services" id="">
+                <h1 class="nav-items">Replace</h1>
+              </a>
+              <a class="nav-link active" href="/contacts" id="">
+                <h1 class="nav-items">Contact</h1>
+              </a>
+              <a class="nav-link active" href="/contacts" id="" style="margin-left:48rem; margin-top:1rem;">
+                <div class="toggle-container">
+                  <input class="toggle-input" type="checkbox">
+                  <div class="toggle-handle-wrapper">
+                    <div class="toggle-handle">
+                      <div class="toggle-handle-knob"></div>
+                      <div class="toggle-handle-bar-wrapper">
+                        <div class="toggle-handle-bar"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggle-base">
+                    <div class="toggle-base-inside"></div>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
@@ -162,7 +163,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
 
-            <a href="#" class="btn btn-primary">click here!</a>
+          <a href="#" class="btn btn-primary">click here!</a>
           </div>
         </div>
         <div class="card col-lg-3">
@@ -200,6 +201,58 @@
               </g>
             </svg>
           </div>
+        </div>
+        <div class="container">
+          <form>
+            <label>
+              <input type="checkbox" name="radio" checked="">
+              <span><b>Cities</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Zones</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Followers</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Headquarters</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Industry</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Headcount</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Listing</b></span>
+            </label>
+            <label>
+              <input type="checkbox" name="radio">
+              <span><b>Segments</b></span>
+            </label>
+          </form>
+          <button>
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <span>Submit</span>
+          </button>
+          
         </div>
       </div>
     </div>
