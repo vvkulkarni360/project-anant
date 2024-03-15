@@ -46,17 +46,39 @@ containerLabels.forEach(function (label) {
 
 
 //radio button dropdown
-const toggleRadios = document.querySelectorAll('.toggleRadio');
+// const toggleRadios = document.querySelectorAll('.toggleRadio');
 
-toggleRadios.forEach(function (toggleRadio) {
-  toggleRadio.addEventListener('change', function () {
-    const targetId = toggleRadio.getAttribute('data-target');
-    const targetDropdown = document.getElementById(targetId);
+// toggleRadios.forEach(function (toggleRadio) {
+//   toggleRadio.addEventListener('change', function () {
+//     const targetId = toggleRadio.getAttribute('data-target');
+//     const targetDropdown = document.getElementById(targetId);
 
-    if (toggleRadio.checked) {
-      targetDropdown.style.display = 'block';
-    } else {
-      targetDropdown.style.display = 'none';
-    }
-  });
+//     if (toggleRadio.checked) {
+//       targetDropdown.style.display = 'block';
+//     } else {
+//       targetDropdown.style.display = 'none';
+//     }
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cityDropdown = document.getElementById('cityDropdown');
+
+  fetch('cities.json') // Change 'cities.json' to the path of your external JSON file
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      return response.json();
+    })
+    .then(data => {
+      data.forEach(city => {
+        const option = document.createElement('option');
+        option.textContent = city; 
+        cityDropdown.appendChild(option);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
 });

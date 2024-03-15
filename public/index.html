@@ -10,6 +10,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="json" href="cities.json">
   <title>Project 1</title>
 </head>
 
@@ -205,7 +206,7 @@
           </div>
         </div>
         <div class="container">
-          <form id="selectors">
+          <form id="selectors" >
             <div class="dropdowndiv">
               <label>
                 <input type="checkbox" name="radio" class="toggleRadio" data-target="dropdown1">
@@ -213,10 +214,8 @@
               </label>
               <div class="dropdown" id="dropdown1">
                 <!-- Your dropdown 1 content goes here -->
-                <select>
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
+                <select id="cityDropdown">
+                  <option>Select City</option>
                 </select>
               </div>
             </div>

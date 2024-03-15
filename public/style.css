@@ -454,3 +454,35 @@ nav{
     opacity: 1;
     transform: translate(2em, 2em) rotate(-15deg);
   }
+  .dropdowndiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* select{
+    margin-top:7px;
+    margin-left:4px;
+  } */
+  
+  #selectors{
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  select {
+    width: 100%;
+    padding: 8px;
+    /* margin: 2px 0; */
+    border: 1px solid #3498db; /* Blue border color */
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #3498db; /* Blue text color */
+    background-color: #ecf0f1; /* Light background color */
+  }
+
+  select:hover,
+  select:focus {
+    border-color: #2980b9; /* Darker blue border color on hover or focus */
+  }
